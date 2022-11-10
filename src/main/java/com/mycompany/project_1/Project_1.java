@@ -6,12 +6,14 @@
 
 //
 
-int []arr = {1,2,3,4,5,6,10};
-    boolean flag = true;
+int []arr = {1,2,3,4,5,6,10,11,12,13,14,15};
+     boolean[]sieve=bolean[n+1];
     
-    int i = 0;
-    for(i=0; i<=arr.length-1; i++)
-    {
+    int p = 2;
+    for(p = 2;p < n2;p++)
+    for(inti = p*p; i<n;i=i+p)
+{
+sieve[i]=true;
         
         if(arr[i] <= arr[i+1])
             break;
